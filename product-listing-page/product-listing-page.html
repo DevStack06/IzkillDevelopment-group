@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>e-commerce website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="product-listing-page.css" />
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    
+</head>
+<body>
+    <div class="wrapper">
+        <div class="shadow-line">
+
+        </div>
+        <div id="filter" class="filter-wrapper container-fluid">
+            <div class="row">
+                <div class="title-container">
+                    <h1 class="title">men tshirts</h1>
+                    <span class="title-count"> - 58364 items</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5 col-sm-5 col-md-4 col-lg-3 col-xl-3 no-left-padding no-right-padding">
+                    <div class="filter-title-container">
+                        <h1 class="filter-title">filters</h1>
+                        <span class="clear-all-btn" onclick="uncheck_all()">clear all</span>
+                    </div>
+                    <!----------------------------------------------------
+                                         BRAND FILTER
+                    ----------------------------------------------------->
+                        <div class="vertical-filter brand-container border-top">
+                            <span class="vertical-filter-header">brand</span>
+                            <ul class="list-unstyled brand-list">
+                                <li>
+                                    <label class="custom-checkbox-container">Roadster
+                                        <span class="brand-num">(2709)</span>
+                                        <input type="checkbox" name="check">
+                                        <div class="checkbox-indicator"></div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="custom-checkbox-container">United Colors of Benetton
+                                            <span class="brand-num">(2709)</span>
+                                            <input type="checkbox" name="check">
+                                            <div class="checkbox-indicator"></div>
+                                    </label>
+                                 </li>
+                                 <li>
+                                     <label class="custom-checkbox-container">Roadster
+                                                <span class="brand-num">(2709)</span>
+                                                <input type="checkbox" name="check">
+                                                <div class="checkbox-indicator"></div>
+                                     </label>
+                                 </li>
+                                 <li>
+                                     <label class="custom-checkbox-container">Roadster
+                                                   <span class="brand-num">(2709)</span>
+                                                   <input type="checkbox" name="check">
+                                                   <div class="checkbox-indicator"></div>
+                                        </label>
+                                </li>
+                            </ul>
+                            <div class="brand-more">
+                                + 462 more
+                            </div>
+                        </div>
+                        <!----------------------------------------------------
+                                         PRICE FILTER
+                        ----------------------------------------------------->
+                        <div class="vertical-filter brand-container sticky">
+                                <span class="vertical-filter-header">price</span>
+                                <ul class="list-unstyled brand-list">
+                                    <li>
+                                        <label class="custom-checkbox-container">Rs. 179 to Rs. 484 
+                                            <span class="brand-num">(2709)</span>
+                                            <input type="checkbox" name="check">
+                                            <div class="checkbox-indicator"></div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="custom-checkbox-container">Rs. 484 to Rs. 789
+                                                <span class="brand-num">(2709)</span>
+                                                <input type="checkbox" name="check">
+                                                <div class="checkbox-indicator"></div>
+                                        </label>
+                                     </li>
+                                     <li>
+                                         <label class="custom-checkbox-container">Rs. 789 to Rs. 1094 
+                                                    <span class="brand-num">(2709)</span>
+                                                    <input type="checkbox" name="check">
+                                                    <div class="checkbox-indicator"></div>
+                                         </label>
+                                     </li>
+                                     <li>
+                                         <label class="custom-checkbox-container">Rs. 1094 to Rs. 1399 
+                                                       <span class="brand-num">(2709)</span>
+                                                       <input type="checkbox" name="check">
+                                                       <div class="checkbox-indicator"></div>
+                                            </label>
+                                    </li>
+                                </ul>
+                                <div class="brand-more">
+                                    + 462 more
+                                </div>
+                            </div>
+                            <!----------------------------------------------------
+                                         COLOUR FILTER
+                            ----------------------------------------------------->
+                            <div class="vertical-filter brand-container sticky-132">
+                                    <span class="vertical-filter-header">color</span>
+                                    <ul class="list-unstyled brand-list">
+                                        <li>
+                                            <label class="custom-checkbox-container">Grey
+                                                <span class="brand-num">(2709)</span>
+                                                <input type="checkbox" name="check">
+                                                <div class="checkbox-indicator"></div>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="custom-checkbox-container">Blue
+                                                    <span class="brand-num">(2709)</span>
+                                                    <input type="checkbox" name="check">
+                                                    <div class="checkbox-indicator"></div>
+                                            </label>
+                                         </li>
+                                         <li>
+                                             <label class="custom-checkbox-container">Maroon 
+                                                        <span class="brand-num">(2709)</span>
+                                                        <input type="checkbox" name="check">
+                                                        <div class="checkbox-indicator"></div>
+                                             </label>
+                                         </li>
+                                         <li>
+                                             <label class="custom-checkbox-container">Olive
+                                                           <span class="brand-num">(2709)</span>
+                                                           <input type="checkbox" name="check">
+                                                           <div class="checkbox-indicator"></div>
+                                                </label>
+                                        </li>
+                                    </ul>
+                                    <div class="brand-more">
+                                        + 462 more
+                                    </div>
+                                </div>
+                                <!----------------------------------------------------
+                                         DISCOUNT FILTER
+                                ----------------------------------------------------->
+                                <div class="vertical-filter brand-container sticky-355">
+                                        <span class="vertical-filter-header">discount range</span>
+                                        <ul class="list-unstyled brand-list">
+                                            <li>
+                                                <label class="custom-checkbox-container">20% and above 
+                                                    <span class="brand-num">(2709)</span>
+                                                    <input type="checkbox" name="check">
+                                                    <div class="checkbox-indicator"></div>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="custom-checkbox-container">30% and above
+                                                        <span class="brand-num">(2709)</span>
+                                                        <input type="checkbox" name="check">
+                                                        <div class="checkbox-indicator"></div>
+                                                </label>
+                                             </li>
+                                             <li>
+                                                 <label class="custom-checkbox-container">40% and above
+                                                            <span class="brand-num">(2709)</span>
+                                                            <input type="checkbox" name="check">
+                                                            <div class="checkbox-indicator"></div>
+                                                 </label>
+                                             </li>
+                                             <li>
+                                                 <label class="custom-checkbox-container">50% and above 
+                                                               <span class="brand-num">(2709)</span>
+                                                               <input type="checkbox" name="check">
+                                                               <div class="checkbox-indicator"></div>
+                                                    </label>
+                                            </li>
+                                        </ul>
+                                        <div class="brand-more">
+                                            + 462 more
+                                        </div>
+                                    </div>
+                </div>
+                <div class="col-7 col-sm-7 col-md-8 col-lg-9 col-xl-9 no-left-padding no-right-padding">
+                    <div class="blank-gap">
+
+                    </div>
+                        <div class="item-container">
+                                <ul class="container-fluid card-container list-unstyled">
+                                    <li class="card product">
+                                        <div class="img-box">
+                                            <a href="#"><img src="img/tshirt.PNG" title="Roadster Men Black Solid Round Neck T-shirt" alt=""></a>
+                                        </div>
+                                        <div class="details">
+                                            <div class="action-button">
+                                                <span class="add-to-bag product-action-button">add to bag</span>
+                                                <span class="wishlist product-action-button">wishlist</span>
+                                            </div>
+                                            <a href="#"><div><span class="product-brand">Roadster</span><span class="product-specification">Solid Round Neck T-shirt</span></div>
+                                            <h4 class="product-sizes">Sizes: <span>S,M,L,XL,XXL</span></h4>
+                                            <div class="price">Rs. 419<span class="price-strike">Rs. 699</span><span class="discount-price">(40% OFF)</span></div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="card product">
+                                            <div class="img-box">
+                                                <a href="#"><img src="img/tshirt.PNG" title="Roadster Men Black Solid Round Neck T-shirt" alt=""></a>
+                                            </div>
+                                            <div class="details">
+                                                <div class="action-button">
+                                                    <span class="add-to-bag product-action-button">add to bag</span>
+                                                    <span class="wishlist product-action-button">wishlist</span>
+                                                </div>
+                                                <a href="#"><div><span class="product-brand">Roadster</span><span class="product-specification">Solid Round Neck T-shirt</span></div>
+                                                <h4 class="product-sizes">Sizes: <span>S,M,L,XL,XXL</span></h4>
+                                                <div class="price">Rs. 419<span class="price-strike">Rs. 699</span><span class="discount-price">(40% OFF)</span></div>
+                                                </a>
+                                            </div>
+                                    </li>
+                                    <li class="card product">
+                                            <div class="img-box">
+                                                <a href="#"><img src="img/tshirt.PNG" title="Roadster Men Black Solid Round Neck T-shirt" alt=""></a>
+                                            </div>
+                                            <div class="details">
+                                                <div class="action-button">
+                                                    <span class="add-to-bag product-action-button">add to bag</span>
+                                                    <span class="wishlist product-action-button">wishlist</span>
+                                                </div>
+                                                <a href="#"><div><span class="product-brand">Roadster</span><span class="product-specification">Solid Round Neck T-shirt</span></div>
+                                                <h4 class="product-sizes">Sizes: <span>S,M,L,XL,XXL</span></h4>
+                                                <div class="price">Rs. 419<span class="price-strike">Rs. 699</span><span class="discount-price">(40% OFF)</span></div>
+                                                </a>
+                                            </div>
+                                    </li>
+                                    <li class="card product">
+                                            <div class="img-box">
+                                                <a href="#"><img src="img/tshirt.PNG" title="Roadster Men Black Solid Round Neck T-shirt" alt=""></a>
+                                            </div>
+                                            <div class="details">
+                                                <div class="action-button">
+                                                    <span class="add-to-bag product-action-button">add to bag</span>
+                                                    <span class="wishlist product-action-button">wishlist</span>
+                                                </div>
+                                                <a href="#"><div><span class="product-brand">Roadster</span><span class="product-specification">Solid Round Neck T-shirt</span></div>
+                                                <h4 class="product-sizes">Sizes: <span>S,M,L,XL,XXL</span></h4>
+                                                <div class="price">Rs. 419<span class="price-strike">Rs. 699</span><span class="discount-price">(40% OFF)</span></div>
+                                                </a>
+                                            </div>
+                                    </li> 
+                                    <li class="card product">
+                                            <div class="img-box">
+                                                <a href="#"><img src="img/tshirt.PNG" title="Roadster Men Black Solid Round Neck T-shirt" alt=""></a>
+                                            </div>
+                                            <div class="details">
+                                                <div class="action-button">
+                                                    <span class="add-to-bag product-action-button">add to bag</span>
+                                                    <span class="wishlist product-action-button">wishlist</span>
+                                                </div>
+                                                <a href="#"><div><span class="product-brand">Roadster</span><span class="product-specification">Solid Round Neck T-shirt</span></div>
+                                                <h4 class="product-sizes">Sizes: <span>S,M,L,XL,XXL</span></h4>
+                                                <div class="price">Rs. 419<span class="price-strike">Rs. 699</span><span class="discount-price">(40% OFF)</span></div>
+                                                </a>
+                                            </div>
+                                    </li>
+                                    <li class="card product">
+                                                <div class="img-box">
+                                                    <a href="#"><img src="img/tshirt.PNG" title="Roadster Men Black Solid Round Neck T-shirt" alt=""></a>
+                                                </div>
+                                                <div class="details">
+                                                    <div class="action-button">
+                                                        <span class="add-to-bag product-action-button">add to bag</span>
+                                                        <span class="wishlist product-action-button">wishlist</span>
+                                                    </div>
+                                                    <a href="#"><div><span class="product-brand">Roadster</span><span class="product-specification">Solid Round Neck T-shirt</span></div>
+                                                    <h4 class="product-sizes">Sizes: <span>S,M,L,XL,XXL</span></h4>
+                                                    <div class="price">Rs. 419<span class="price-strike">Rs. 699</span><span class="discount-price">(40% OFF)</span></div>
+                                                    </a>
+                                                </div>
+                                    </li>
+                                    <li class="card product">
+                                                <div class="img-box">
+                                                    <a href="#"><img src="img/tshirt.PNG" title="Roadster Men Black Solid Round Neck T-shirt" alt=""></a>
+                                                </div>
+                                                <div class="details">
+                                                    <div class="action-button">
+                                                        <span class="add-to-bag product-action-button">add to bag</span>
+                                                        <span class="wishlist product-action-button">wishlist</span>
+                                                    </div>
+                                                    <a href="#"><div><span class="product-brand">Roadster</span><span class="product-specification">Solid Round Neck T-shirt</span></div>
+                                                    <h4 class="product-sizes">Sizes: <span>S,M,L,XL,XXL</span></h4>
+                                                    <div class="price">Rs. 419<span class="price-strike">Rs. 699</span><span class="discount-price">(40% OFF)</span></div>
+                                                    </a>
+                                                </div>
+                                    </li>
+                                    <li class="card product">
+                                                <div class="img-box">
+                                                    <a href="#"><img src="img/tshirt.PNG" title="Roadster Men Black Solid Round Neck T-shirt" alt=""></a>
+                                                </div>
+                                                <div class="details">
+                                                    <div class="action-button">
+                                                        <span class="add-to-bag product-action-button">add to bag</span>
+                                                        <span class="wishlist product-action-button">wishlist</span>
+                                                    </div>
+                                                    <a href="#"><div><span class="product-brand">Roadster</span><span class="product-specification">Solid Round Neck T-shirt</span></div>
+                                                    <h4 class="product-sizes">Sizes: <span>S,M,L,XL,XXL</span></h4>
+                                                    <div class="price">Rs. 419<span class="price-strike">Rs. 699</span><span class="discount-price">(40% OFF)</span></div>
+                                                    </a>
+                                                </div>
+                                    </li>
+                                    <li class="card product">
+                                        <div class="img-box">
+                                            <a href="#"><img src="img/tshirt.PNG" title="Roadster Men Black Solid Round Neck T-shirt" alt=""></a>
+                                        </div>
+                                        <div class="details">
+                                            <div class="action-button">
+                                                <span class="add-to-bag product-action-button">add to bag</span>
+                                                <span class="wishlist product-action-button">wishlist</span>
+                                            </div>
+                                            <a href="#"><div><span class="product-brand">Roadster</span><span class="product-specification">Solid Round Neck T-shirt</span></div>
+                                            <h4 class="product-sizes">Sizes: <span>S,M,L,XL,XXL</span></h4>
+                                            <div class="price">Rs. 419<span class="price-strike">Rs. 699</span><span class="discount-price">(40% OFF)</span></div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="card product">
+                                            <div class="img-box">
+                                                <a href="#"><img src="img/tshirt.PNG" title="Roadster Men Black Solid Round Neck T-shirt" alt=""></a>
+                                            </div>
+                                            <div class="details">
+                                                <div class="action-button">
+                                                    <span class="add-to-bag product-action-button">add to bag</span>
+                                                    <span class="wishlist product-action-button">wishlist</span>
+                                                </div>
+                                                <a href="#"><div><span class="product-brand">Roadster</span><span class="product-specification">Solid Round Neck T-shirt</span></div>
+                                                <h4 class="product-sizes">Sizes: <span>S,M,L,XL,XXL</span></h4>
+                                                <div class="price">Rs. 419<span class="price-strike">Rs. 699</span><span class="discount-price">(40% OFF)</span></div>
+                                                </a>
+                                            </div>
+                                    </li>
+                                    <li class="card product">
+                                            <div class="img-box">
+                                                <a href="#"><img src="img/tshirt.PNG" title="Roadster Men Black Solid Round Neck T-shirt" alt=""></a>
+                                            </div>
+                                            <div class="details">
+                                                <div class="action-button">
+                                                    <span class="add-to-bag product-action-button">add to bag</span>
+                                                    <span class="wishlist product-action-button">wishlist</span>
+                                                </div>
+                                                <a href="#"><div><span class="product-brand">Roadster</span><span class="product-specification">Solid Round Neck T-shirt</span></div>
+                                                <h4 class="product-sizes">Sizes: <span>S,M,L,XL,XXL</span></h4>
+                                                <div class="price">Rs. 419<span class="price-strike">Rs. 699</span><span class="discount-price">(40% OFF)</span></div>
+                                                </a>
+                                            </div>
+                                    </li>
+                                    <li class="card product">
+                                            <div class="img-box">
+                                                <a href="#"><img src="img/tshirt.PNG" title="Roadster Men Black Solid Round Neck T-shirt" alt=""></a>
+                                            </div>
+                                            <div class="details">
+                                                <div class="action-button">
+                                                    <span class="add-to-bag product-action-button">add to bag</span>
+                                                    <span class="wishlist product-action-button">wishlist</span>
+                                                </div>
+                                                <a href="#"><div><span class="product-brand">Roadster</span><span class="product-specification">Solid Round Neck T-shirt</span></div>
+                                                <h4 class="product-sizes">Sizes: <span>S,M,L,XL,XXL</span></h4>
+                                                <div class="price">Rs. 419<span class="price-strike">Rs. 699</span><span class="discount-price">(40% OFF)</span></div>
+                                                </a>
+                                            </div>
+                                    </li> 
+                                    <li class="card product">
+                                            <div class="img-box">
+                                                <a href="#"><img src="img/tshirt.PNG" title="Roadster Men Black Solid Round Neck T-shirt" alt=""></a>
+                                            </div>
+                                            <div class="details">
+                                                <div class="action-button">
+                                                    <span class="add-to-bag product-action-button">add to bag</span>
+                                                    <span class="wishlist product-action-button">wishlist</span>
+                                                </div>
+                                                <a href="#"><div><span class="product-brand">Roadster</span><span class="product-specification">Solid Round Neck T-shirt</span></div>
+                                                <h4 class="product-sizes">Sizes: <span>S,M,L,XL,XXL</span></h4>
+                                                <div class="price">Rs. 419<span class="price-strike">Rs. 699</span><span class="discount-price">(40% OFF)</span></div>
+                                                </a>
+                                            </div>
+                                    </li>
+                                    <li class="card product">
+                                                <div class="img-box">
+                                                    <a href="#"><img src="img/tshirt.PNG" title="Roadster Men Black Solid Round Neck T-shirt" alt=""></a>
+                                                </div>
+                                                <div class="details">
+                                                    <div class="action-button">
+                                                        <span class="add-to-bag product-action-button">add to bag</span>
+                                                        <span class="wishlist product-action-button">wishlist</span>
+                                                    </div>
+                                                    <a href="#"><div><span class="product-brand">Roadster</span><span class="product-specification">Solid Round Neck T-shirt</span></div>
+                                                    <h4 class="product-sizes">Sizes: <span>S,M,L,XL,XXL</span></h4>
+                                                    <div class="price">Rs. 419<span class="price-strike">Rs. 699</span><span class="discount-price">(40% OFF)</span></div>
+                                                    </a>
+                                                </div>
+                                    </li>
+                                    <li class="card product">
+                                                <div class="img-box">
+                                                    <a href="#"><img src="img/tshirt.PNG" title="Roadster Men Black Solid Round Neck T-shirt" alt=""></a>
+                                                </div>
+                                                <div class="details">
+                                                    <div class="action-button">
+                                                        <span class="add-to-bag product-action-button">add to bag</span>
+                                                        <span class="wishlist product-action-button">wishlist</span>
+                                                    </div>
+                                                    <a href="#"><div><span class="product-brand">Roadster</span><span class="product-specification">Solid Round Neck T-shirt</span></div>
+                                                    <h4 class="product-sizes">Sizes: <span>S,M,L,XL,XXL</span></h4>
+                                                    <div class="price">Rs. 419<span class="price-strike">Rs. 699</span><span class="discount-price">(40% OFF)</span></div>
+                                                    </a>
+                                                </div>
+                                    </li>
+                                    <li class="card product">
+                                                <div class="img-box">
+                                                    <a href="#"><img src="img/tshirt.PNG" title="Roadster Men Black Solid Round Neck T-shirt" alt=""></a>
+                                                </div>
+                                                <div class="details">
+                                                    <div class="action-button">
+                                                        <span class="add-to-bag product-action-button">add to bag</span>
+                                                        <span class="wishlist product-action-button">wishlist</span>
+                                                    </div>
+                                                    <a href="#"><div><span class="product-brand">Roadster</span><span class="product-specification">Solid Round Neck T-shirt</span></div>
+                                                    <h4 class="product-sizes">Sizes: <span>S,M,L,XL,XXL</span></h4>
+                                                    <div class="price">Rs. 419<span class="price-strike">Rs. 699</span><span class="discount-price">(40% OFF)</span></div>
+                                                    </a>
+                                                </div>
+                                    </li>
+                                    <li class="card product">
+                                            <div class="img-box">
+                                                <a href="#"><img src="img/tshirt.PNG" title="Roadster Men Black Solid Round Neck T-shirt" alt=""></a>
+                                            </div>
+                                            <div class="details">
+                                                <div class="action-button">
+                                                    <span class="add-to-bag product-action-button">add to bag</span>
+                                                    <span class="wishlist product-action-button">wishlist</span>
+                                                </div>
+                                                <a href="#"><div><span class="product-brand">Roadster</span><span class="product-specification">Solid Round Neck T-shirt</span></div>
+                                                <h4 class="product-sizes">Sizes: <span>S,M,L,XL,XXL</span></h4>
+                                                <div class="price">Rs. 419<span class="price-strike">Rs. 699</span><span class="discount-price">(40% OFF)</span></div>
+                                                </a>
+                                            </div>
+                                    </li>
+                                    <li class="card product">
+                                                <div class="img-box">
+                                                    <a href="#"><img src="img/tshirt.PNG" title="Roadster Men Black Solid Round Neck T-shirt" alt=""></a>
+                                                </div>
+                                                <div class="details">
+                                                    <div class="action-button">
+                                                        <span class="add-to-bag product-action-button">add to bag</span>
+                                                        <span class="wishlist product-action-button">wishlist</span>
+                                                    </div>
+                                                    <a href="#"><div><span class="product-brand">Roadster</span><span class="product-specification">Solid Round Neck T-shirt</span></div>
+                                                    <h4 class="product-sizes">Sizes: <span>S,M,L,XL,XXL</span></h4>
+                                                    <div class="price">Rs. 419<span class="price-strike">Rs. 699</span><span class="discount-price">(40% OFF)</span></div>
+                                                    </a>
+                                                </div>
+                                    </li>
+                                    <li class="card product">
+                                                <div class="img-box">
+                                                    <a href="#"><img src="img/tshirt.PNG" title="Roadster Men Black Solid Round Neck T-shirt" alt=""></a>
+                                                </div>
+                                                <div class="details">
+                                                    <div class="action-button">
+                                                        <span class="add-to-bag product-action-button">add to bag</span>
+                                                        <span class="wishlist product-action-button">wishlist</span>
+                                                    </div>
+                                                    <a href="#"><div><span class="product-brand">Roadster</span><span class="product-specification">Solid Round Neck T-shirt</span></div>
+                                                    <h4 class="product-sizes">Sizes: <span>S,M,L,XL,XXL</span></h4>
+                                                    <div class="price">Rs. 419<span class="price-strike">Rs. 699</span><span class="discount-price">(40% OFF)</span></div>
+                                                    </a>
+                                                </div>
+                                    </li>
+                                    <li class="card product">
+                                                <div class="img-box">
+                                                    <a href="#"><img src="img/tshirt.PNG" title="Roadster Men Black Solid Round Neck T-shirt" alt=""></a>
+                                                </div>
+                                                <div class="details">
+                                                    <div class="action-button">
+                                                        <span class="add-to-bag product-action-button">add to bag</span>
+                                                        <span class="wishlist product-action-button">wishlist</span>
+                                                    </div>
+                                                    <a href="#"><div><span class="product-brand">Roadster</span><span class="product-specification">Solid Round Neck T-shirt</span></div>
+                                                    <h4 class="product-sizes">Sizes: <span>S,M,L,XL,XXL</span></h4>
+                                                    <div class="price">Rs. 419<span class="price-strike">Rs. 699</span><span class="discount-price">(40% OFF)</span></div>
+                                                    </a>
+                                                </div>
+                                    </li> 
+                                    <li class="card product">
+                                                <div class="img-box">
+                                                    <a href="#"><img src="img/tshirt.PNG" title="Roadster Men Black Solid Round Neck T-shirt" alt=""></a>
+                                                </div>
+                                                <div class="details">
+                                                    <div class="action-button">
+                                                        <span class="add-to-bag product-action-button">add to bag</span>
+                                                        <span class="wishlist product-action-button">wishlist</span>
+                                                    </div>
+                                                    <a href="#"><div><span class="product-brand">Roadster</span><span class="product-specification">Solid Round Neck T-shirt</span></div>
+                                                    <h4 class="product-sizes">Sizes: <span>S,M,L,XL,XXL</span></h4>
+                                                    <div class="price">Rs. 419<span class="price-strike">Rs. 699</span><span class="discount-price">(40% OFF)</span></div>
+                                                    </a>
+                                                </div>
+                                    </li>
+                                    <li class="card product">
+                                                    <div class="img-box">
+                                                        <a href="#"><img src="img/tshirt.PNG" title="Roadster Men Black Solid Round Neck T-shirt" alt=""></a>
+                                                    </div>
+                                                    <div class="details">
+                                                        <div class="action-button">
+                                                            <span class="add-to-bag product-action-button">add to bag</span>
+                                                            <span class="wishlist product-action-button">wishlist</span>
+                                                        </div>
+                                                        <a href="#"><div><span class="product-brand">Roadster</span><span class="product-specification">Solid Round Neck T-shirt</span></div>
+                                                        <h4 class="product-sizes">Sizes: <span>S,M,L,XL,XXL</span></h4>
+                                                        <div class="price">Rs. 419<span class="price-strike">Rs. 699</span><span class="discount-price">(40% OFF)</span></div>
+                                                        </a>
+                                                    </div>
+                                    </li>
+                                    <li class="card product">
+                                                    <div class="img-box">
+                                                        <a href="#"><img src="img/tshirt.PNG" title="Roadster Men Black Solid Round Neck T-shirt" alt=""></a>
+                                                    </div>
+                                                    <div class="details">
+                                                        <div class="action-button">
+                                                            <span class="add-to-bag product-action-button">add to bag</span>
+                                                            <span class="wishlist product-action-button">wishlist</span>
+                                                        </div>
+                                                        <a href="#"><div><span class="product-brand">Roadster</span><span class="product-specification">Solid Round Neck T-shirt</span></div>
+                                                        <h4 class="product-sizes">Sizes: <span>S,M,L,XL,XXL</span></h4>
+                                                        <div class="price">Rs. 419<span class="price-strike">Rs. 699</span><span class="discount-price">(40% OFF)</span></div>
+                                                        </a>
+                                                    </div>
+                                    </li>
+                                    <li class="card product">
+                                                    <div class="img-box">
+                                                        <a href="#"><img src="img/tshirt.PNG" title="Roadster Men Black Solid Round Neck T-shirt" alt=""></a>
+                                                    </div>
+                                                    <div class="details">
+                                                        <div class="action-button">
+                                                            <span class="add-to-bag product-action-button">add to bag</span>
+                                                            <span class="wishlist product-action-button">wishlist</span>
+                                                        </div>
+                                                        <a href="#"><div><span class="product-brand">Roadster</span><span class="product-specification">Solid Round Neck T-shirt</span></div>
+                                                        <h4 class="product-sizes">Sizes: <span>S,M,L,XL,XXL</span></h4>
+                                                        <div class="price">Rs. 419<span class="price-strike">Rs. 699</span><span class="discount-price">(40% OFF)</span></div>
+                                                        </a>
+                                                    </div>
+                                    </li>
+                                </ul>  
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function appear_clear_btn(){
+            var x=document.getElementsByClassName("clear-all-btn");
+            document.getElementsByName("check").on('click',function(){
+                if(x.style.display=="none"){
+                    x.style.display="block";
+                }
+                else{
+                    x.style.display="none";
+                }
+            });
+        }
+        function uncheck_all(){
+            var ele=document.getElementsByName("check");
+            for(var i=0;i<ele.length;i++)
+            ele[i].checked=false;
+        }
+    </script>
+</body>
+</html>
